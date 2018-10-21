@@ -1,0 +1,1155 @@
+/*****/
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    font-family: Arial;
+}
+
+body a {
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+    transition: 0.5s all;
+}
+
+#d_type {
+    width: 91.5%;
+    padding: 10px;
+    font-size: 16px;
+}
+
+
+#d_type option {
+    font-size: 16px;
+}
+
+input[type=submit], input[type=button] {
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+    transition: 0.5s all;
+}
+
+body a:hover {
+    text-decoration: none;
+}
+
+body a:focus {
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial;
+    letter-spacing: 2px;
+}
+
+p {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial;
+    letter-spacing: 1px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+/*********/
+
+/** Home **/
+.container {
+    width: 100%;
+    margin: 0px auto;
+}
+
+.logo {
+    float: left;
+    margin-left: 20px;
+    margin-top: 10px;
+
+}
+
+.logo img.logo-img {
+    border-radius: 50%;
+}
+
+.navigation {
+    float: right;
+}
+
+.header {
+    width: 95%;
+}
+
+/** Navigations **/
+nav ul {
+    list-style: none;
+    overflow: hidden;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    -webkit-transition: max-height 0.5s ease;
+    -moz-transition: max-height 0.5s ease;
+
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 20px 20px;
+
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-family: Arial;
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #00a78e;
+    padding: 5px 10px;
+    font-weight: bold;
+}
+
+nav ul li ul.drop-down {
+    position: absolute;
+    background: #00a78e;
+    width: 300px;
+    border-radius: 0px 0px 5px 5px;
+    padding: 1px;
+    text-align: left;
+    display: none;
+
+}
+
+nav ul li ul.drop-down-1 {
+    position: absolute;
+    background: #00a78e;
+    width: 350px;
+    border-radius: 0px 0px 5px 5px;
+    padding: 1px;
+    text-align: left;
+    display: none;
+
+}
+
+nav ul li ul.drop-down-1 li a {
+    font-size: 14px;
+    color: #fff;
+}
+
+nav ul li ul.drop-down-1 li:hover {
+    background: rgba(0, 0, 0, 0.58);
+}
+
+nav ul li:hover ul.drop-down-1 {
+    display: block;
+    animation: menu1 300ms ease-in-out forwards;
+
+}
+
+nav ul li ul.drop-down-1 li {
+    display: block;
+    text-transform: uppercase;
+
+}
+
+nav ul li ul.drop-down li {
+    display: block;
+    text-transform: uppercase;
+
+}
+
+nav ul li ul.drop-down li a {
+    font-size: 14px;
+    color: #fff;
+}
+
+nav ul li ul.drop-down li:hover {
+    background: rgba(0, 0, 0, 0.58);
+}
+
+nav ul li:hover ul.drop-down {
+    display: block;
+    animation: menu1 300ms ease-in-out forwards;
+
+}
+
+/** This does the animation when you hover on the drop down links **/
+@keyframes menu1 {
+    0% {
+        opacity: 0;
+        transform: rotateY(90deg) translateY(40px);
+    }
+    100% {
+        opacity: 1;
+        transform: rotateY(0deg) translateY(0px);
+    }
+
+}
+
+/****/
+
+/** Navigations **/
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+.charity-cover-photo {
+    background: url(../images/helping-hand.jpg) center no-repeat;
+    background-size: cover;
+    min-height: 800px;
+}
+
+.charity-cover-photo h1 {
+    font-size: 40px;
+    color: #fff;
+    position: absolute;
+    top: 40%;
+    left: 23%;
+    color: #fff;
+
+}
+
+.charity-cover-photo p {
+    font-size: 20px;
+    color: #fff;
+    position: absolute;
+    top: 48%;
+    left: 15%;
+    right: 15%;
+}
+
+.charity-cover-photo a.donate-button {
+    padding: 10px 60px;
+    border: 2px solid black;
+    color: #fff;
+    text-decoration: none;
+    position: absolute;
+    top: 70%;
+    left: 45%;
+    background-color: #00a78e;
+    border-radius: 5px;
+
+}
+
+.charity-cover-photo a:hover {
+    background-color: #fff;
+    color: #00a78e;
+}
+
+#slide {
+    opacity: 0;
+    -webkit-transition: opacity 1.0s linear 0s;
+    transition: opacity 1.0s linear 0s;
+}
+
+/** Home **/
+
+/** About us **/
+.navigation-about-page {
+    min-height: 100px;
+
+}
+
+.header {
+    width: 90%;
+    margin: auto;
+}
+
+.about-content {
+    min-height: 900px;
+}
+
+.about-content h1 {
+    font-size: 50px;
+    padding: 5px 10px;
+}
+
+.about-content h4 {
+    font-size: 20px;
+    padding: 0px 0px 5px 10px;
+}
+
+.about-content p {
+    font-size: 14px;
+    padding: 0px 10px;
+}
+
+.about-content .p-container {
+    width: 50%;
+    margin-bottom: 20px;
+
+}
+
+.about-content .get-in-touch {
+    border: 2px solid black;
+    padding: 10px 40px;
+    text-decoration: none;
+    color: #fff;
+    margin: 10px 10px;
+    background: #00a78e;
+    border-radius: 5px;
+}
+
+.about-content .get-in-touch:hover {
+    background: #fff;
+    color: #00a78e;
+}
+
+.about-content h3 {
+    text-align: center;
+    padding: 25px;
+    font-size: 30px;
+
+}
+
+.about-foundation {
+    margin-left: 60px;
+}
+
+.about-content .image-container {
+    width: 90%;
+    margin: 0px auto;
+}
+
+.image-container img {
+    margin: 0px 10px 10px 0px;
+    cursor: pointer;
+    -webkit-transition: 0.5s ease-in-out;
+    border: none;
+    filter: grayscale(0);
+    border: 2px solid black;
+}
+
+.image-container img:hover {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    filter: grayscale(100);
+}
+
+/*** Package **/
+.package-container {
+    width: 100%;
+    min-height: 600px;
+}
+
+.package-container h1 {
+    text-align: center;
+    font-size: 40px;
+}
+
+.package-content {
+    width: 70%;
+    margin: 30px auto;
+}
+
+.img-container {
+    width: 40%;
+    margin: 10px auto;
+    border: 2px solid black;
+    height: 600px;
+}
+
+.img-container > img {
+    width: 100%;
+    height: 600px;
+    -webkit-transition: transform 750ms ease-in-out;
+}
+
+.img-container > img:hover {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+
+}
+
+/*** Package **/
+/*** Donation Stylesheet ***/
+
+.donation-container {
+    width: 70%;
+    margin: 10px auto;
+    min-height: 900px;
+}
+
+.donation-container h3 {
+    text-align: center;
+    font-size: 50px;
+}
+
+.credit-card {
+    text-align: center;
+}
+
+.credit-card li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.form-container {
+    width: 70%;
+    margin: auto;
+
+}
+
+.form-container h2 {
+    padding: 10px 0px;
+}
+
+input[type=text] {
+    width: 700px;
+    height: 40px;
+    margin-bottom: 5px;
+    padding: 0px 4px;
+}
+
+input[type=text]:focus {
+    border: 2px solid #00a78e;
+    border-radius: 10px;
+}
+
+input[type=submit] {
+    padding: 15px 50px;
+    border: none;
+    background: #00a78e;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+    border: 2px solid black;
+}
+
+input[type=submit]:hover {
+    background: #fff;
+    color: #00a78e;
+}
+
+label {
+    font-size: 20px;
+    font-family: Arial;
+    font-weight: bold;
+}
+
+i.fa.fa-cc-visa, i.fa.fa-cc-mastercard, i.fa.fa-credit-card {
+    font-size: 3em;
+}
+
+/** Contact us **/
+
+.contact-container {
+    width: 90%;
+    margin: auto;
+    min-height: 670px;
+}
+
+.form-container1 {
+    width: 60%;
+    float: left;
+    min-height: 400px;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.contact-container h3 {
+    text-align: center;
+    font-size: 30px;
+    padding-bottom: 5px;
+}
+
+.information-container {
+    width: 30%;
+    float: left;
+    min-height: 500px;
+    margin-top: 40px;
+}
+
+.information-container h3 {
+    text-align: center;
+    font-size: 40px;
+    padding-bottom: 10px;
+
+}
+
+.information-container h3.address {
+    padding-top: 25px;
+}
+
+.information-container p {
+    text-align: center;
+    font-size: 22px;
+    padding-top: 30px;
+}
+
+.fa-phone {
+    color: #00a78e;
+}
+
+.fa-envelope {
+    color: #00a78e;
+}
+
+.fa-map-marker {
+    color: #00a78e;
+}
+
+textarea {
+    box-sizing: border-box;
+    width: 720px;
+    height: 250px;
+    padding: 10px 5px;
+    border-bottom: 2px solid grey;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    font-size: 14px;
+}
+
+input[type=name] {
+    border-bottom: 2px solid grey;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    height: 40px;
+    width: 350px;
+    margin-bottom: 10px;
+    padding: 10px 5px;
+    box-sizing: border-box;
+
+}
+
+input[type=email] {
+    border-bottom: 2px solid grey;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    height: 40px;
+    width: 350px;
+    margin-bottom: 10px;
+    padding: 10px 5px;
+    box-sizing: border-box;
+}
+
+input[type=subject] {
+    border-bottom: 2px solid grey;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    height: 40px;
+    width: 700px;
+    margin-bottom: 10px;
+    padding: 10px 5px;
+    box-sizing: border-box;
+}
+
+input[type=name]:focus {
+    border: 2px solid #00a78e;
+    border-radius: 5px;
+}
+
+input[type=email]:focus {
+    border: 2px solid #00a78e;
+    border-radius: 5px;
+}
+
+input[type=subject]:focus {
+    border: 2px solid #00a78e;
+    border-radius: 5px;
+}
+
+textarea:focus {
+    border: 2px solid #00a78e;
+    border-radius: 5px;
+}
+
+.icon-container {
+    width: 100%;
+}
+
+.contact-icons {
+    list-style: none;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.contact-icons li {
+    display: inline-block;
+    padding: 10px 40px;
+}
+
+/*** Footer Section **/
+.footer-section {
+    width: 100%;
+    margin: auto;
+    height: 40px;
+    line-height: 35px;
+    background: #00a78e;
+    overflow: hidden;
+
+}
+
+.footer-container {
+    width: 80%;
+    margin: auto;
+}
+
+.copyright {
+    float: left;
+}
+
+.social-media {
+    float: right;
+}
+
+ul.social-media-icons {
+    list-style: none;
+}
+
+ul.social-media-icons li {
+    display: inline-block;
+    padding: 0px 15px;
+}
+
+.footer-section footer {
+    color: #fff;
+    font-size: 14px;
+    font-family: Arial;
+}
+
+/** Footer Section **/
+#handle {
+    width: 15%;
+    min-height: 50px;
+    float: right;
+    min-height: 25px;
+    cursor: pointer;
+    margin-top: 2px;
+}
+
+#handle span {
+    width: 40px;
+    background: black;
+    height: 5px;
+    display: none;
+    margin-bottom: 2px;
+
+    cursor: pointer
+
+}
+
+#t_name {
+    width: 93.2%;
+    font-size: 16px;
+
+}
+
+@media screen and (max-width: 600px) {
+    nav ul {
+        max-height: 0;
+        background: black;
+        width: 100%;
+        overflow: hidden;
+        box-sizing: border-box;
+
+    }
+
+    .header {
+        width: 100%;
+    }
+
+    .logo {
+        width: 60%;
+        margin: 10px auto;
+    }
+
+    nav ul li {
+        width: 100%;
+        text-align: left;
+        box-sizing: border-box;
+        border-bottom: 2px solid black;
+
+    }
+
+    #handle span {
+        display: block;
+    }
+
+    .showing {
+        max-height: 35em;
+    }
+
+    #slide {
+        top: 60%;
+        left: 15%;
+        font-size: 20px;
+    }
+
+    p.text {
+        top: 70%;
+    }
+
+    .charity-cover-photo a.donate-button {
+        top: 100%;
+        left: 33%
+
+    }
+
+    .footer-section .footer-container .copyright footer {
+        font-size: 10px;
+    }
+
+    i.fa.fa-sort-desc {
+        color: #fff;
+    }
+}
+
+@media screen and (min-width: 400px) and (max-width: 600px) {
+    #slide {
+        top: 58%;
+        left: 15%;
+        font-size: 20px;
+    }
+
+    .charity-cover-photo a.donate-button {
+        top: 100%;
+        left: 30%
+
+    }
+
+    p.text {
+        top: 65%;
+        font-size: 15px;
+    }
+
+    .footer-container {
+        width: 100%;
+    }
+
+    .footer-section .footer-container .copyright footer {
+        font-size: 8px;
+        font-weight: bold;
+
+    }
+
+    .form-container {
+        width: 100%;
+        margin: 0;
+    }
+
+    input[type=text] {
+        width: 350px;
+        height: 50px;
+    }
+
+    .donation-container h3 {
+        font-size: 30px;
+    }
+
+    i.fa.fa-cc-visa, i.fa.fa-cc-mastercard, i.fa.fa-credit-card {
+        font-size: 2em;
+    }
+
+}
+
+@media screen and (min-width: 100px) and (max-width: 400px) {
+    #slide {
+        top: 58%;
+        left: 15%;
+        font-size: 15px;
+    }
+
+    .charity-cover-photo a.donate-button {
+        top: 100%;
+        left: 20%
+
+    }
+
+    p.text {
+        top: 65%;
+        font-size: 14px;
+    }
+
+    .footer-container {
+        width: 100%;
+    }
+
+    .footer-section .footer-container .copyright footer {
+        font-size: 12px;
+        margin-left: 20px;
+
+    }
+
+    .form-container {
+        width: 100%;
+        margin: 0;
+    }
+
+    input[type=text] {
+        width: 230px;
+        height: 50px;
+    }
+
+    .donation-container h3 {
+        font-size: 30px;
+    }
+
+    i.fa.fa-cc-visa, i.fa.fa-cc-mastercard, i.fa.fa-credit-card {
+        font-size: 1.2em;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 1000px) {
+    .logo {
+        width: 100%;
+    }
+
+    nav ul {
+        max-height: 0;
+        background: black;
+    }
+
+    nav ul li {
+        width: 100%;
+        text-align: left;
+        border-bottom: 2px solid black;
+        box-sizing: border-box;
+    }
+
+    #slide {
+        top: 58%;
+        left: 15%;
+        font-size: 20px;
+    }
+
+    .showing {
+        max-width: 35em;
+    }
+
+    #handle span {
+        display: block;
+    }
+
+    .charity-cover-photo a.donate-button {
+        top: 100%;
+        left: 35%
+
+    }
+
+    .showing {
+        max-height: 35em;
+    }
+
+    p.text {
+        top: 70%;
+        font-size: 20px;
+    }
+
+    .footer-container {
+
+    }
+
+    .footer-section .footer-container .copyright footer {
+        font-size: 12px;
+
+    }
+
+    i.fa.fa-sort-desc {
+        color: #fff;
+    }
+
+    .form-container {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    input[type=text] {
+        width: 520px;
+        height: 50px;
+    }
+
+    .donation-container h3 {
+        font-size: 30px;
+    }
+
+    i.fa.fa-cc-visa, i.fa.fa-cc-mastercard, i.fa.fa-credit-card {
+        font-size: 2.5em;
+    }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1200px) {
+    nav ul li a {
+        font-size: 12px;
+    }
+
+    .form-container {
+        width: 100%;
+        margin: 0;
+    }
+
+    input[type=text] {
+        width: 700px;
+        height: 50px;
+    }
+
+    .donation-container h3 {
+        font-size: 30px;
+    }
+
+    i.fa.fa-cc-visa, i.fa.fa-cc-mastercard, i.fa.fa-credit-card {
+        font-size: 3em;
+    }
+}
+
+@media screen and (min-width: 100px) and (max-width: 400px) {
+    .about-foundation {
+        width: 100%;
+        margin: 0;
+    }
+
+    .about-foundation h1 {
+        font-size: 22px;
+        font-weight: bold;
+    }
+
+    .about-foundation h4 {
+        font-size: 18px;
+
+    }
+
+    .p-container {
+        width: 100%;
+        margin: 0;
+        position: none;
+
+    }
+
+    .p-container p {
+        width: 100%;
+        margin: 0;
+    }
+
+    .image-container img {
+        width: 95%;
+        margin-left: 3px;
+
+    }
+
+}
+
+@media screen and (min-width: 400px) and (max-width: 600px) {
+    .about-foundation {
+        width: 100%;
+        margin: 0;
+    }
+
+    .image-container img {
+        width: 90%;
+        margin-left: 30px;
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 800px) {
+    .about-foundation {
+        width: 100%;
+        margin: 0;
+    }
+
+    .image-container img {
+        width: 240px;
+        height: 240px;
+
+    }
+}
+
+@media screen and (min-width: 800px) and (max-width: 1000px) {
+    .image-container img {
+        width: 240px;
+        height: 240px;
+
+    }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1400px) {
+    .image-container img {
+        width: 30%;
+
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 1000px) {
+    .package-container {
+        margin-top: 270px;
+    }
+
+    .img-container {
+        width: 90%;
+        margin: 4px auto;;
+
+    }
+
+    .img-container > img {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 100px) and (max-width: 400px) {
+    .img-container {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 400px) and (max-width: 600px) {
+    .img-container {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 1000px)  and (max-width: 1200px) {
+    .package-container {
+        margin-top: 40px;
+    }
+}
+
+@media screen and (min-width: 100px) and (max-width: 400px) {
+    .form-container1 {
+        width: 100%;
+        margin: 0;
+    }
+
+    .information-container {
+        width: 100%;
+        float: none;
+    }
+
+    input[type=name] {
+        width: 250px;
+    }
+
+    input[type=email] {
+        width: 250px;
+    }
+
+    input[type=subject] {
+        width: 250px;
+    }
+
+    form textarea {
+        width: 250px;
+    }
+}
+
+@media screen and (min-width: 400px) and (max-width: 500px) {
+    .form-container1 {
+        width: 100%;
+        margin: 0;
+    }
+
+    .information-container {
+        width: 100%;
+
+    }
+
+    input[type=name] {
+        width: 370px;
+    }
+
+    input[type=email] {
+        width: 370px;
+    }
+
+    input[type=subject] {
+        width: 370px;
+    }
+
+    form textarea {
+        width: 370px;
+    }
+}
+
+@media screen and (min-width: 500px) and (max-width: 700px) {
+    .form-container1 {
+        width: 100%;
+        margin: 0;
+        text-align: center;
+    }
+
+    .information-container {
+        width: 100%;
+
+    }
+
+    input[type=name] {
+        width: 420px;
+    }
+
+    input[type=email] {
+        width: 420px;
+    }
+
+    input[type=subject] {
+        width: 420px;
+    }
+
+    form textarea {
+        width: 420px;
+    }
+}
+
+@media screen and (min-width: 700px) and (max-width: 1000px) {
+    .form-container1 {
+        width: 100%;
+        margin: 0;
+        text-align: center;
+    }
+
+    .information-container {
+        width: 100%;
+
+    }
+
+    input[type=name] {
+        width: 700px;
+    }
+
+    input[type=email] {
+        width: 700px;
+    }
+
+    input[type=subject] {
+        width: 700px;
+    }
+
+    form textarea {
+        width: 700px;
+    }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1400px) {
+    input[type=name] {
+        width: 500px;
+    }
+
+    input[type=email] {
+        width: 500px;
+    }
+
+    input[type=subject] {
+        width: 500px;
+    }
+
+    form textarea {
+        width: 500px;
+    }
+}
