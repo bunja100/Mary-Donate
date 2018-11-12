@@ -25,7 +25,7 @@ if ($_POST['submit']) {
     <meta name="viewport" content="width=device-width, initial-scale = 1, userscaleable = no">
     <title>Donation</title>
     <!-- Stylesheets -->
-<!--    <link rel="stylesheet" type="text/css" href="css/main.css">-->
+    <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
 
     <link rel="stylesheet" type="text/css" href="css/font-awesome.css">

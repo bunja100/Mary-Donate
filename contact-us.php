@@ -9,13 +9,12 @@ if ($_POST['submit']) {
     $headers = 'From: ' . $from . "\r\n" .
         'Reply-To:' . $email . "\r\n" .
         'X-Mailer: PHP/' . phpversion();
-    $sent = mail('bunjabarra1000@gmail.com', $subject, $message, $from, $headers);
+    $sent = mail('mariamsanneh63@yahoo.com', $subject, $message, $from, $headers);
 
     if ($sent) {
         $success = 'Data Successfully submitted';
     } else {
         $error = 'Failed, Sorry try again';
-
     }
 }
 
@@ -46,7 +45,7 @@ if ($_POST['submit']) {
             <input type="name" name="name" placeholder="Full Name" c required>
             <input type="email" name="email" placeholder="Email" required> <br>
             <input type="subject" name="subject" placeholder="Subject" required> <br>
-            <textarea placeholder="Message..." name="message"></textarea>
+            <textarea placeholder="Message..." name="message"></textarea><br>
             <input type="submit" name="submit" value="Submit">
         </form>
 

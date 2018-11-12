@@ -19,28 +19,29 @@ include "sessions.php";
             margin-top: 5px;
         }
     </style>
-
 </head>
 <body>
-<div class="navigation-about-page">
+    <div class="navigation-about-page">
     <?php
-    include "header.php"
+    include "open_header.php"
     ?>
 </div>
+
 <div class="container">
     <div class="col-md-10 col-md-offset-1">
         <?php
         include "Config/connect.php";
 
-        $sql = "SELECT * FROM donations";
+        $sql = "SELECT * FROM events";
         $result = mysqli_query($connection, $sql);
         $no = 1;
         echo "<table class='table table-striped'>";
         echo "<thead>";
         echo "<tr>";
         echo "<th>No</th>";
-        echo "<th>Name</th>";
-        echo "<th>Donation Type</th>";
+        echo "<th>Event Name</th>";
+        echo "<th>Date</th>";
+        echo "<th>Time</th>";
         echo "<th>Action</th>";
         echo "</tr>";
         echo "</thead>";
@@ -48,9 +49,10 @@ include "sessions.php";
         while ($rows = mysqli_fetch_array($result)) {
             echo "<tr>";
             echo "<td>" . $no++ . "</td>";
-            echo "<td> $rows[name]</td>";
-            echo "<td> $rows[donation_type]</td>";
-             echo "<td><a href='#'>Delete</a></td>";
+            echo "<td> $rows[event_name]</td>";
+            echo "<td> $rows[event_date]</td>";
+            echo "<td> $rows[event_time]</td>";
+            echo "<td><a href='#'>Delete</a></td>";
             echo "</tr>";
         }
         echo "</tbody>";
