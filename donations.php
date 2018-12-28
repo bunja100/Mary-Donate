@@ -12,7 +12,6 @@ if ($_POST['submit']) {
         $success = 'Data Successfully submitted';
     } else
         $error = 'Failed, Sorry try again';
-
 }
 
 ?>

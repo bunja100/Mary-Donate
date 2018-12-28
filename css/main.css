@@ -203,7 +203,7 @@ nav ul li:hover ul.drop-down {
 }
 
 .charity-cover-photo {
-    background: url(../images/helping-hand.jpg) center no-repeat;
+    background: url(../images/charity-events.jpg) center no-repeat;
     background-size: cover;
     min-height: 800px;
 }
